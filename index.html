@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/docs/4.0/examples/sign-in/ -->
+<html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./static/favicon.png">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <link rel="canonical" href="oneplusone.hengsen.cn">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./static/signin.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="download text-center">
+      <div class="col-12">
+        <img class="mb-5" src="./static/OPO_logo.png" alt="一加一物联">
+      </div>
+      <div class="col-12 text-center">
+        <img class="mb-4" src="./static/APP_logo.png" alt="一加一物联APP" width="72px" height="72px">
+        <h4 class="mb-5 font-weight-normal">一加一物联APP</h4>
+        <a id="appDownload" class="btn btn-lg btn-primary btn-block" href="https://github.com/HSlxz/OnePlusOne/releases/download/new/OnePlusOne_v4.3.6.apk">点我下载</a>
+        <p class="mt-5 mb-3 text-muted">© Hengsen Technology</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function weixinTip(ele){
+      var ua = navigator.userAgent;
+      var isWeixin = !!/MicroMessenger/i.test(ua);
+      if(isWeixin){
+        ele.onclick=function(e){
+          window.event? window.event.returnValue = false : e.preventDefault();
+          document.getElementById('JweixinTip').style.display='block';
+        }
+        document.getElementById('JweixinTip').onclick=function(){
+          this.style.display='none';
+        }
+      }
+      }
+      var btn1 = document.getElementById('appDownload');
+      weixinTip(btn1);
+      </script>
+
+</body></html>
